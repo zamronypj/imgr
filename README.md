@@ -1,6 +1,6 @@
 # AI Placeholder Image Application
 
-Spring boot 3.9.5 placeholder image application which generate image using AI.
+Spring boot 3.0.5 placeholder image application which generate image using AI.
 
 ## Prerequisite
 
