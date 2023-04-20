@@ -7,7 +7,7 @@ Spring boot 3.0.5 placeholder image application which generate image using AI.
 - Git
 - [Apache Maven 3.9+](https://maven.apache.org/guides/index.html)
 - Java Development Kit 17
-- MariaDB
+- MariaDB/MySQL 8.0
 
 ## Installation
 
