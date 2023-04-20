@@ -16,7 +16,7 @@ $ git clone https://github.com/zamronypj/imgr
 $ cd imgr
 $ cp src/main/resources/application.properties.example src/main/resources/application.properties
 ```
-Edit application.properties database settings to match your system.
+Edit `application.properties` database settings to match your system.
 
 Install project depdendencies
 
