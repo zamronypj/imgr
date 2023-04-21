@@ -2,10 +2,12 @@ package com.juhara.imgr.person;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.lang.Iterable;
+import java.util.Optional;
 
 @RestController
 public class PersonController {
@@ -16,6 +18,11 @@ public class PersonController {
     @GetMapping("/persons")
     public Iterable<Person> all() {
         return personService.all();
+    }
+
+    @GetMapping("/persons/{id}")
+    public Optional<Person> findPerson(@PathVariable long id) {
+        return personService.findPerson(id);
     }
 
     @PostMapping("/persons")

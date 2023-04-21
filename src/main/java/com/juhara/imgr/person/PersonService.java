@@ -3,6 +3,7 @@ package com.juhara.imgr.person;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.lang.Iterable;
+import java.util.Optional;
 
 @Service
 public class PersonService implements PersonServiceInterface {
@@ -20,4 +21,7 @@ public class PersonService implements PersonServiceInterface {
         return person;
     }
 
+    public Optional<Person> findPerson(long id) {
+        return repository.findById(id);
+    }
 }
