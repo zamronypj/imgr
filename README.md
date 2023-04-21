@@ -18,7 +18,7 @@ $ cp src/main/resources/application.properties.example src/main/resources/applic
 ```
 Edit `application.properties` database settings to match your system.
 
-Install project depdendencies
+Install project dependencies
 
 ```
 $ mvn clean install
