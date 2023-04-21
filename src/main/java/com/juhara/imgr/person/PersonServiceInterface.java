@@ -8,5 +8,6 @@ public interface PersonServiceInterface {
     public Iterable<Person> all();
     public Person createPerson(String name);
     public Optional<Person> findPerson(long id);
+    public Optional<Person> updatePerson(long id, String name);
 
 }
